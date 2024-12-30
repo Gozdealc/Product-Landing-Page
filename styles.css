@@ -1,0 +1,177 @@
+/* Genel Özellikler */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Sayfanın arkaplan rengi */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(223, 222, 222);
+    color: #333;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    min-height: 80px;
+    position: fixed;
+    background-color: rgb(227, 227, 228);
+    padding: 0px 20px;
+    width: 100%;
+}
+.logo img{
+width: 250px;
+height: auto;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 400px;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+#form_section {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+#form_section h2 {
+    margin-bottom: 15px;
+}
+ #form input[name = "email"] {
+    margin-bottom: 8px;
+    padding: 15px;
+    width: 300px;
+}
+#form #submit {
+    max-width: 150px;
+    width: 100%;
+    background-color: rgb(25, 0, 136);
+    padding: 10px;
+    border: none;
+    color: white;
+}
+
+/* Grid yapısını ortalamak için */
+#features {
+    display: grid;
+    grid-template-columns: 1fr; /* Sadece bir sütun */
+    gap: 20px;
+    justify-items: center; /* Grid öğelerini ortalar */
+    align-items: center; /* Yükseklik ve genişlik ile ortalama */
+    margin-top: 50px;
+  }
+  
+  .grid {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Genişlik ayarı */
+  }
+  
+/* İkon kısmı */
+.icon {
+    font-size: 1em; /* İkon büyüklüğü */
+    margin-right: 20px; /* İkon ile metin arasına boşluk ekler */
+    width: 60px; /* İkonun genişliğini sabitle */
+    height: 60px; /* İkonun yüksekliğini sabitle */
+    display: flex;
+    align-items: center; /* Yükseklik ve genişlik ile ortalama */
+    justify-content: center;
+}
+
+/* Açıklama kısmı */
+#features .desc {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+}
+/* RESPONSIVE TASARIM */
+@media (max-width: 768px) {
+    #features .grid {
+        flex-direction: column;
+    }
+
+    #header nav ul {
+        flex-direction: column;
+    }
+}
+#how-it-works {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 0px 20px 25px 20px;
+}
+.product .level {
+    background-color: rgb(218, 209, 209);
+    width: 100%;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.product h2 {
+    margin-top: 20px;
+}
+.product ol {
+    list-style-type: none;
+    margin-top: 15px 0;
+}
+.product ol li {
+    padding: 5px;
+}
+.product button {
+    padding: 10px 20px;
+    background-color: rgb(22, 9, 78);
+    color: white;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+footer {
+    margin-top: 30px;
+    background-color: rgb(218, 209, 209);
+    padding: 20px;
+}
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+footer li a {
+    text-decoration: none;
+    color: black;
+    justify-content: space-around;
+}
+footer span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
